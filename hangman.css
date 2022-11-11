@@ -1,0 +1,110 @@
+body {
+  background-image: url(img/man.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  max-width: 610px;
+  margin: auto;
+}
+
+h1{
+  font-family: 'Serif';
+  font-size: 2em;
+  text-align: center;
+  color: gold;
+}
+h2{
+    font-family: 'Serif';
+    text-align: center;
+    color: gold;
+}
+
+.win {
+  color: white;
+  background-color: gold;
+}
+
+.loss {
+  color: black;
+  background-color: goldenrod;
+}
+
+#word {
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 20pt;
+  color: black(255, 255, 153);
+  font-weight: bold;
+  font-family: "serif"
+}
+
+#guesses {
+  text-align: center;
+  font-size: 16pt;
+  color: burlywood
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace
+}
+
+.guess {
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+    #guesses {
+    text-align: center;
+    font-size: 15pt;
+    color: goldenrod;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+
+  .guess {
+    padding: 30px;
+    display: inline-block;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+#guessBox {
+    height: 60px;
+    border-radius: 10px;
+    padding-top: 5px;
+    font-size: 18pt;
+    width: 200px;
+    padding-left: 10px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #666;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: rgb(224, 224, 139)}
+
+.button:active {
+  background-color: rgb(224, 224, 139);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
